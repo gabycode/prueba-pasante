@@ -279,3 +279,28 @@ body {
         top: 18px;
     }
 }
+
+@media (max-width: 500px) {
+    .navbar {
+        display: none;
+    }
+
+    .qs-desc {
+        width: 90%;
+    }
+
+    .ns-cols {
+        margin-right: 2em;
+    }
+
+    .ns-cols::before {
+        position: absolute;
+        content: "";
+        height: 90%;
+        width: 3px;
+        z-index: -1;
+        background: #2a364e;
+        left: -2em;
+        top: 18px;
+    }
+}
