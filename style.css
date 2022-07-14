@@ -60,12 +60,8 @@ body {
 
 .main {
     color: #eee;
-    /* max-width: 700px; */
     text-align: center;
-    /* margin: 0em 5em 0 auto; */
-    /* background: rgba(255, 255, 255, 0.1); */
     padding: 2em;
-    /* border-radius: 5px; */
 }
 
 .titulo-slogan {
@@ -208,4 +204,78 @@ body {
     clip-path: polygon(0 0, 100% 0, 50% 100%);
     grid-row: 1 / 2;
     grid-column: 1 / -1;
+}
+
+@media (max-width: 1170px) {
+    .titulo-slogan {
+        margin: 23vh 0;
+    }
+
+    #nuestros-servicios {
+        margin-bottom: 8em;
+    }
+
+    .nuestros-servicios {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .ns-cols::before {
+        position: absolute;
+        content: '';
+        height: 120px;
+        width: 8px;
+        z-index: -1;
+        background: #2a364e;
+        left: -2em;
+        top: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        position: absolute;
+    }
+
+    .navbar ul li a {
+        margin-right: 0;
+        margin-left: 1.5em;
+    }
+
+    .titulo-slogan {
+        margin: 8em 0;
+    }
+
+    .quienes-somos {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .qs-titulo {
+        max-width: 100%;
+        margin: 1em 4em;
+        padding: 0;
+        border: none;
+        border-bottom: 5px solid #911232;
+    }
+
+    .qs-desc {
+        max-width: 500px;
+        margin: .5em auto;
+        line-height: 1.7;
+
+    }
+
+    .ns-cols::before {
+        position: absolute;
+        content: '';
+        height: 200px;
+        width: 5px;
+        z-index: -1;
+        background: #2a364e;
+        left: -2em;
+        top: 18px;
+    }
 }
