@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Nav */
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    padding: 1.3em 0;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-size: 1.1rem;
+    margin-right: 2em;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 1px solid #fa688c;
+}
+
+.logo {
+    width: 100px;
+}
+
+
+/* Inicio */
+
+#inicio {
+    background-image: url(./imgs/oficina2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    color: #eee;
+    /* max-width: 700px; */
+    text-align: center;
+    /* margin: 0em 5em 0 auto; */
+    /* background: rgba(255, 255, 255, 0.1); */
+    padding: 2em;
+    /* border-radius: 5px; */
+}
+
+.titulo-slogan {
+    margin: 30vh 3em 0 46em;
+}
+
+.titulo {
+    font-size: 5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+
+.slogan {
+    margin-bottom: 1em;
+    padding: 1em;
+    text-shadow: 0px 5px 5px #000;
+
+}
+
+.saber-mas-btn {
+    background-color: #f5164d;
+    color: rgba(255, 255, 255, 0.808);
+    text-decoration: none;
+    padding: .7em 1.2em;
+    border-radius: 10px;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+.saber-mas-btn:hover {
+    background-color: #991939;
+}
+
+
+/* Quienes Somos */
+
+.quienes-somos {
+    display: grid;
+    grid-template: repeat(2, 50%) / 30% 70%;
+    padding: 10vh 0;
+    background-color: #1d1d1d;
+    color: #eee;
+    border-top: 3px solid #000;
+}
+
+.qs-titulo {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 5px solid #911232;
+    max-width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    padding: 2em 0;
+    grid-row: 1 / -1;
+
+}
+
+.qs-desc {
+    font-size: 1.2rem;
+    margin-right: 6em;
+    padding-bottom: 0.5em;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.qs-col-1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+}
+
+.qs-col-2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+}
+
+
+/* Nuestros Servicios */
+
+#nuestros-servicios {
+    margin-bottom: 20em;
+}
+
+.nuestros-servicios {
+    border-top: 3px solid #000;
+    display: grid;
+    grid-template: auto 10em / repeat(3, 33.3%);
+    text-align: left;
+}
+
+.ns-titulo {
+    color: #f5164d;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.ns-cols {
+    margin-top: 3em;
+    margin: 3em 6em 0 6em;
+    position: relative;
+}
+
+.ns-cols::before {
+    position: absolute;
+    content: '';
+    height: 220px;
+    width: 15px;
+    z-index: -1;
+    background: #2a364e;
+    left: -3em;
+    top: 18px;
+}
+
+.ns-col-1 {
+    grid-row: 2 / -1;
+    grid-column: 1 / 2;
+}
+
+.ns-col-2 {
+    grid-row: 2 / -1;
+    grid-column: 2  / 3;
+}
+
+.ns-col-3 {
+    grid-row: 2 / -1;
+    grid-column: 3 / 4;
+}
+
+.ns-desc {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.ns-img {
+    width: 470px;
+    display: block;
+    margin: 0 auto;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
